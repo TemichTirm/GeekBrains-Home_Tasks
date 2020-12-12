@@ -1,0 +1,6 @@
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\bin\Debug\HomeTask_2.1.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\bin\Debug\HomeTask_2.1.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\bin\Debug\HomeTask_2.1.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\obj\Debug\HomeTask_2.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\obj\Debug\HomeTask_2.1.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.1\obj\Debug\HomeTask_2.1.pdb
