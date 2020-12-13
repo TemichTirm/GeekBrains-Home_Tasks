@@ -15,7 +15,7 @@ namespace WeatherInfo
         public static double averageTemperature;
         public static int month;
 
-        #region Метод получения значения числа с плавающей точкой из консоли
+        #region Метод получения значения числа с плавающей точкой из консоли с проверкой превышения значений
         /// <summary>
         /// Выводит значение в виде рационального числа с проверкой после ввода в консоли
         /// </summary>
@@ -37,7 +37,7 @@ namespace WeatherInfo
         }
         #endregion
         
-        #region Метод получения значения целого числа из консоли
+        #region Метод получения значения целого числа из консоли c проверкой превышения значений
         /// <summary>
         /// Выводит значение в виде целого числа с проверкой после ввода в консоли
         /// </summary>
@@ -53,6 +53,23 @@ namespace WeatherInfo
                     Console.WriteLine("Вы ввели нереальное значение, пожалуйста введите снова:");
                 else
                     Console.WriteLine("Вы ввели неправильное значение, пожалуйста введите снова:");
+                input = Console.ReadLine();
+            }
+            return value;
+        }
+        #endregion
+
+        #region Метод получения значения целого числа из консоли без проверки
+        /// <summary>
+        /// Выводит значение в виде целого числа без проверки после ввода в консоли
+        /// </summary>
+        public static int GetValue()
+        {
+            int value;
+            string input = Console.ReadLine();
+            while (!int.TryParse(input.Replace('.', ','), out value))
+            {
+                Console.WriteLine("Вы ввели неправильное значение, пожалуйста введите снова:");
                 input = Console.ReadLine();
             }
             return value;

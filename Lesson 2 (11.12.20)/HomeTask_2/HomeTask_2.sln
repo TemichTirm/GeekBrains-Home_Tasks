@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.2", "HomeTask_2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherInfo", "WeatherInfo\WeatherInfo.csproj", "{82568F34-A866-4FEA-B5A6-AA8A8A67121A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.3", "HomeTask_2.3\HomeTask_2.3.csproj", "{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{82568F34-A866-4FEA-B5A6-AA8A8A67121A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82568F34-A866-4FEA-B5A6-AA8A8A67121A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82568F34-A866-4FEA-B5A6-AA8A8A67121A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

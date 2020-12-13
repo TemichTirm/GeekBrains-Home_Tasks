@@ -26,7 +26,7 @@ namespace HomeTask_2._2
         }
         static void Main()
         {
-            // Запрос месяца номера месяца
+            // Запрос номера месяца
             Console.WriteLine("Пожалуйста введите порядковый номер месяца:");
             WeatherInfo.WeatherInfo.month = WeatherInfo.WeatherInfo.GetValue(12);
             
