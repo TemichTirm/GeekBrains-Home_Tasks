@@ -3,34 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherInfo;
 /// <summary>
 /// Домашнее задание 2.1
 /// </summary>
 namespace HomeTask_2._1
 {
-    class Program
+    public class Program
     {
-        #region Метод получения значения температуры из консоли
-        /// <summary>
-        /// Выводит значение в виде рационального числа с проверкой после ввода в консоли
-        /// </summary>
-        /// <param name="checkvalue">Максимальная величина модуля значения</param>
-        /// <returns></returns>
-        static double GetValue(double checkvalue)
-        {
-            double value;
-            string input = Console.ReadLine();
-            while (!double.TryParse(input.Replace('.', ','), out value) || (Math.Abs(value) > checkvalue))
-            {
-                if (Math.Abs(value) > checkvalue)
-                    Console.WriteLine("Вы ввели нереальное значение, пожалуйста введите снова:");
-                else
-                    Console.WriteLine("Вы ввели неправильное значение, пожалуйста введите снова:");
-                input = Console.ReadLine();
-            }
-            return value;
-        }
-        #endregion
+        
         /// <summary>
         /// Вычисление средней температуры за сутки на основе мин. и макс. значений, введенных пользователем
         /// </summary>
@@ -38,20 +19,20 @@ namespace HomeTask_2._1
         {
             // Запрос минимальной температуры за сутки
             Console.WriteLine("Пожалуйста введите минимальную температуру за сутки, градусы Цельсия:");
-            double minTemperature = GetValue(100.0);
+            WeatherInfo.WeatherInfo.minTemperature = WeatherInfo.WeatherInfo.GetValue(100.0);
 
             // Запрос максимальной температуры за сутки
             Console.WriteLine("Пожалуйста введите максимальную температуру за сутки, градусы Цельсия:");
-            double maxTemperature = GetValue(100.0);
+            WeatherInfo.WeatherInfo.maxTemperature = WeatherInfo.WeatherInfo.GetValue(100.0);
 
             //Расчет среднего значения температуры за сутки
-            double averageTemperature = (maxTemperature + minTemperature) / 2;
+            WeatherInfo.WeatherInfo.averageTemperature = (WeatherInfo.WeatherInfo.maxTemperature + WeatherInfo.WeatherInfo.minTemperature) / 2;
 
             //Вывод результатов на экран
             Console.Clear();
-            Console.WriteLine($"Минимальная температура за сутки: {minTemperature} град. Цельсия;");
-            Console.WriteLine($"Максимальная температура за сутки: {maxTemperature} град. Цельсия;");
-            Console.WriteLine($"\nСредняя температура за сутки: {averageTemperature} град. Цельсия.");
+            Console.WriteLine($"Минимальная температура за сутки: {WeatherInfo.WeatherInfo.minTemperature} град. Цельсия;");
+            Console.WriteLine($"Максимальная температура за сутки: {WeatherInfo.WeatherInfo.maxTemperature} град. Цельсия;");
+            Console.WriteLine($"\nСредняя температура за сутки: {WeatherInfo.WeatherInfo.averageTemperature} град. Цельсия.");
 
             Console.ReadLine();
         }

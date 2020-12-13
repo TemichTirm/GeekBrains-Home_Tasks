@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{286507E6-35D3-4031-9BFD-02CD73167963}</ProjectGuid>
+    <ProjectGuid>{82568F34-A866-4FEA-B5A6-AA8A8A67121A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeTask_2._1</RootNamespace>
-    <AssemblyName>HomeTask_2.1</AssemblyName>
+    <RootNamespace>WeatherInfo</RootNamespace>
+    <AssemblyName>WeatherInfo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WeatherInfo\WeatherInfo.csproj">
-      <Project>{82568f34-a866-4fea-b5a6-aa8a8a67121a}</Project>
-      <Name>WeatherInfo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
