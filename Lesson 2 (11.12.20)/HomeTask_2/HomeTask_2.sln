@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.1", "HomeTask_2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.2", "HomeTask_2.2\HomeTask_2.2.csproj", "{8EE58439-8EDD-44BA-9795-22AD3E7FE3EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherInfo", "WeatherInfo\WeatherInfo.csproj", "{82568F34-A866-4FEA-B5A6-AA8A8A67121A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.4", "WeatherInfo\HomeTask_2.4.csproj", "{82568F34-A866-4FEA-B5A6-AA8A8A67121A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_2.3", "HomeTask_2.3\HomeTask_2.3.csproj", "{BCF72D30-5849-4D50-BA7B-1F71E5A39F3E}"
 EndProject

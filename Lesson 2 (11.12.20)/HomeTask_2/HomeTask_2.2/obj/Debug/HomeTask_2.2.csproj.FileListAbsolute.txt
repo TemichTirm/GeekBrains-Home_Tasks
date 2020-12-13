@@ -3,9 +3,5 @@ C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-H
 C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.exe.config
 C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.exe
 C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.pdb
-C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\WeatherInfo.exe
-C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\WeatherInfo.pdb
-C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\bin\Debug\WeatherInfo.exe.config
-C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.csproj.CopyComplete
 C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.exe
 C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.pdb

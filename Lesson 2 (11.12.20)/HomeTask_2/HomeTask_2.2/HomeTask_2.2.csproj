@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WeatherInfo\WeatherInfo.csproj">
-      <Project>{82568f34-a866-4fea-b5a6-aa8a8a67121a}</Project>
-      <Name>WeatherInfo</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

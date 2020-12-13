@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomeTask_2.1\HomeTask_2.1.csproj">
+      <Project>{286507e6-35d3-4031-9bfd-02cd73167963}</Project>
+      <Name>HomeTask_2.1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeTask_2.2\HomeTask_2.2.csproj">
+      <Project>{8ee58439-8edd-44ba-9795-22ad3e7fe3ef}</Project>
+      <Name>HomeTask_2.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeTask_2.3\HomeTask_2.3.csproj">
+      <Project>{bcf72d30-5849-4d50-ba7b-1f71e5a39f3e}</Project>
+      <Name>HomeTask_2.3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
