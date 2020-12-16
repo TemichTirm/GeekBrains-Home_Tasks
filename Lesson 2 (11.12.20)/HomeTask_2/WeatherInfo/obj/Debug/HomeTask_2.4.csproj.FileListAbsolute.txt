@@ -1,0 +1,17 @@
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\WeatherInfo.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\WeatherInfo.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\WeatherInfo.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.1.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.2.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.3.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.1.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.1.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.2.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.2.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.3.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\bin\Debug\HomeTask_2.3.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\obj\Debug\HomeTask_2.4.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\obj\Debug\HomeTask_2.4.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\obj\Debug\HomeTask_2.4.csproj.CopyComplete
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\obj\Debug\WeatherInfo.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 2 (11.12.20)\HomeTask_2\WeatherInfo\obj\Debug\WeatherInfo.pdb
