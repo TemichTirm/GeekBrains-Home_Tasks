@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeTask_3._1
 {
+    /// <summary>
+    /// Класс случайных двумерных квадратных массивов положительных целых чисел
+    /// </summary>
     class RandomArray
     {
         private int sizeArray;
@@ -13,6 +16,11 @@ namespace HomeTask_3._1
         private Random random = new Random();
         private int maxValue;
         private int numberOfDigits;
+        /// <summary>
+        /// Создание экземпляра случайного двумерного квадратного массива положительных целых чисел
+        /// </summary>
+        /// <param name="size">Размер квадратного массива</param>
+        /// <param name="maxValue">Максимальное значение для генерации элементов массива</param>
         public RandomArray(int size, int maxValue)
         {
             sizeArray = size;
@@ -26,6 +34,9 @@ namespace HomeTask_3._1
                 }
             }
         }
+        /// <summary>
+        /// Вывод массива на консоль
+        /// </summary>
         public void Print()
         {
             numberOfDigits = 0;
@@ -56,6 +67,10 @@ namespace HomeTask_3._1
                 Console.WriteLine();
             }
         }
+        /// <summary>
+        /// Вывод диагоналей массива на консоль
+        /// </summary>
+        /// <param name="isMain">Параметр, определяющий какую диагональ выводить (true - главная, false - побочная)</param>
         public void PrintDiagonal(bool isMain)
         {
             Console.WriteLine();
@@ -78,6 +93,12 @@ namespace HomeTask_3._1
                 }
             }
         }
+        /// <summary>
+        /// Генерация случайных целых чисел
+        /// </summary>
+        /// <param name="random">экземпляр класса Random</param>
+        /// <param name="maxValue">Максимальное значение случайных чисел</param>
+        /// <returns></returns>
           private int GenerateDigit(Random random, int maxValue)
         {
             return random.Next(0, maxValue);

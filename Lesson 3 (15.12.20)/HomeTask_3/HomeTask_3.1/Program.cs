@@ -33,9 +33,10 @@ namespace HomeTask_3._1
             int size = GetValue(10);
 
             // Запрос диапазона генерации чисел массива
-            Console.WriteLine("Пожалуйста введите максимальное значение  чисел в массиве от 0 до 1 000 000:");
+            Console.WriteLine("Пожалуйста введите максимальное значение чисел в массиве от 0 до 1 000 000:");
             int maxValue = GetValue(1000000);
 
+            //Создание экземпляра случайного массива и вывод его на экран
             Console.WriteLine("\nИсходный массив целых чисел:\n");
             RandomArray myArray = new RandomArray(size, maxValue);
             myArray.Print();
@@ -47,12 +48,12 @@ namespace HomeTask_3._1
                 ConsoleKeyInfo key = Console.ReadKey(true);
                 if (key.Key == ConsoleKey.D1)
                 {
-                    myArray.PrintDiagonal(true);
+                    myArray.PrintDiagonal(true); //Вывод главной диагонали
                     break;
                 }
                 else if (key.Key == ConsoleKey.D0)
                 {
-                    myArray.PrintDiagonal(false);
+                    myArray.PrintDiagonal(false); //Вывод побочной диагонали
                     break;
                 }
             }
