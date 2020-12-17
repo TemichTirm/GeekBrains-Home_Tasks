@@ -1,0 +1,7 @@
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\bin\Debug\HomeTask_3.1.exe.config
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\bin\Debug\HomeTask_3.1.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\bin\Debug\HomeTask_3.1.pdb
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\obj\Debug\HomeTask_3.1.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\obj\Debug\HomeTask_3.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\obj\Debug\HomeTask_3.1.exe
+C:\Users\Temich\Desktop\Программирование\GeekBrains\GeekBrains-Home_Tasks\Lesson 3 (15.12.20)\HomeTask_3\HomeTask_3.1\obj\Debug\HomeTask_3.1.pdb
