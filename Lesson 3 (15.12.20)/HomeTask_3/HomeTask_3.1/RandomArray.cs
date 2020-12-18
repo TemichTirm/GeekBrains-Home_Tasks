@@ -84,12 +84,10 @@ namespace HomeTask_3._1
             }
             else
             {
-                int i = 0;
                 for (int j = array.GetLength(1)-1; j >= 0; j--)
                 {
                     string str = new String(' ', j * (numberOfDigits + 1));
-                    Console.WriteLine($"{str}{array[i, j]}");
-                    i++;
+                    Console.WriteLine($"{str}{array[array.GetLength(1) - 1 - j, j]}");
                 }
             }
         }
