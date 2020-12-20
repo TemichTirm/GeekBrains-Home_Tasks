@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30170016-837C-4F42-A213-7F482A7B5D9A}</ProjectGuid>
+    <ProjectGuid>{49FB4454-5C00-469C-A05F-73EDF9DB31DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeTask_4._2</RootNamespace>
-    <AssemblyName>HomeTask_4.2</AssemblyName>
+    <RootNamespace>HomeTask_4._3</RootNamespace>
+    <AssemblyName>HomeTask_4.3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SumOfNum.cs" />
+    <Compile Include="Seasons.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

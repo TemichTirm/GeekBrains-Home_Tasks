@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeTask_4._2
 {
-    class Program
+    class SumOfNum
     {
         static void Main(string[] args)
         {

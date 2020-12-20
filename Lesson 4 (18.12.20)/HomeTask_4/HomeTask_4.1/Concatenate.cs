@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace HomeTask_4._1
 {
-    class Program
+    class Concatenate
     {
         static void Main(string[] args)
         {
             // Массив из кортежей, содержащих отдельные записи фамилии, имени и отчества
             (string firstName, string lastName, string patronymic)[] names = 
-             new (string firstName, string lastName, string patronymic)[] 
-                {
-                    ("Иван", "Иванов", "Иванович"),
-                    ("Петр", "Петров", "Петрович"),
-                    ("Сидор", "Сидоров", "Сидорович"),
-                    ("Игорь", "Кузьмин", "Валентинович"),
-                    ("Полиграф", "Шариков", "Полиграфович"),
-                };
+            {
+                ("Иван", "Иванов", "Иванович"),
+                ("Петр", "Петров", "Петрович"),
+                ("Сидор", "Сидоров", "Сидорович"),
+                ("Игорь", "Кузьмин", "Валентинович"),
+                ("Полиграф", "Шариков", "Полиграфович"),
+            };
 
             Console.WriteLine("Полное ФИО:");
             for (int i = 0; i < names.Length; i++)
