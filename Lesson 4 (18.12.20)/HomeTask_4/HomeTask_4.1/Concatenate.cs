@@ -8,9 +8,13 @@ namespace HomeTask_4._1
 {
     class Concatenate
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Объединяет три строковые переменные в одну внутри отдельного метода
+        /// </summary>
+        static void Main()
         {
             // Массив из кортежей, содержащих отдельные записи фамилии, имени и отчества
+            // сделан, чтобы заменить ручной ввод с консоли
             (string firstName, string lastName, string patronymic)[] names = 
             {
                 ("Иван", "Иванов", "Иванович"),

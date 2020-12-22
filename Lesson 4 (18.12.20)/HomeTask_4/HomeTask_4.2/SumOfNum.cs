@@ -8,7 +8,10 @@ namespace HomeTask_4._2
 {
     class SumOfNum
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Вычисление суммы целых чисел, содержащихся в строке и разделенных пробелами
+        /// </summary>
+        static void Main()
         {
             string greeting = "Пожалуйста введите набор целых чисел через пробел для вычисления суммы";
             string attention = "(Внимание! Символы, а также числа с плавающей точкой будут игнорироваться!)\n";

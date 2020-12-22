@@ -39,7 +39,7 @@ namespace HomeTask_3._2
             return phoneBook.GetLength(0);
         }
         /// <summary>
-        /// Внесит изменения в запись телефонного справочника
+        /// Вносит изменения в запись телефонного справочника
         /// </summary>
         /// <param name="numOfRecord">Номер записи, которую нужно изменить</param>
         public void ChangeRecord(int numOfRecord)

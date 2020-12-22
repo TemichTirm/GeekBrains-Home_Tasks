@@ -26,7 +26,6 @@ namespace HomeTask_3._2
                     Console.Clear();
                     Console.WriteLine("Обновленный телефонный справочник:\n");
                     myPhoneBook.Print();
-                    //break;
                 }
                 else if (key.Key == ConsoleKey.Y)
                 {
