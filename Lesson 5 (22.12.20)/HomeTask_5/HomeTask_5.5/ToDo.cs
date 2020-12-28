@@ -10,10 +10,6 @@ namespace HomeTask_5._5
 {
     class ToDo
     {
-        
-        //private string title;
-        //private bool isDone;
-        //private byte count;
         public string Title { get; set; }
         public bool IsDone { get; set; }
         public byte Count { get; set; }
@@ -33,10 +29,13 @@ namespace HomeTask_5._5
             string output = String.Format(" {0}\t   {1}\t\t{2}", Count, status, Title );
             Console.WriteLine(output);
         }
-        public void ChangeTask (bool status, string newTitle = null)
+        public void ChangeStatus()
         {
-            IsDone = status;
-            Title = newTitle?? Title;
+            IsDone = !IsDone;
+        }
+        public void ChangeTitle(string newTitle)
+        {
+            Title = newTitle ?? Title;
         }
     }
 }
