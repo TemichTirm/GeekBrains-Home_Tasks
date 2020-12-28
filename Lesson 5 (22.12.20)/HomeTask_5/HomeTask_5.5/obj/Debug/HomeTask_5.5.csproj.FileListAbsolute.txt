@@ -1,0 +1,17 @@
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\HomeTask_5.5.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\HomeTask_5.5.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\HomeTask_5.5.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Text.Json.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Memory.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Buffers.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.5\obj\Debug\HomeTask_5.5.csproj.CopyComplete
