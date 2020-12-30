@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace HomeTask_5._5
 {
+    /// <summary>
+    /// Реализация списка задач
+    /// </summary>
     class MyToDoList
     {
         static void Main(string[] args)
         {
             
             List<ToDo> toDoList = new List<ToDo>();
-            toDoList =  WorkWithFile.ReadFile();
-            UserInterface.PrintToDo(toDoList);
-            byte taskIndex;
+            toDoList =  WorkWithFile.ReadFile();        // Чтение данных из файла
+            UserInterface.PrintToDo(toDoList);          // Вывод списка задач в консоль
+            byte taskIndex;                             
             while (true)
             {
+                // Запрос на внесение изменений
                 (bool isNeedChanges, byte numOfToDo_ToChange) changes = UserInterface.NeedChanges((byte)toDoList.Count());
                 if (!changes.isNeedChanges) break;
-                else if ((taskIndex = changes.numOfToDo_ToChange) > 0) 
+                else if ((taskIndex = changes.numOfToDo_ToChange) > 0) // Если изменения подтверждены и выбран номер задачи
                 {
                     switch (UserInterface.ChooseChange())
                     {
-                        case ConsoleKey.Escape:
+                        case ConsoleKey.Escape:                     // Возврат в начало
                             {
                                 Console.Clear();
                                 UserInterface.PrintToDo(toDoList);
                                 break;
                             }
-                        case ConsoleKey.D1:
+                        case ConsoleKey.D1:                         // Изменение статуса задачи
                             {
                                 toDoList[taskIndex - 1].ChangeStatus();
                                 UserInterface.RefreshRecordLine(toDoList[taskIndex - 1]);
@@ -41,7 +45,7 @@ namespace HomeTask_5._5
                                 UserInterface.PrintToDo(toDoList);
                                 break;
                             }
-                        case ConsoleKey.D2:
+                        case ConsoleKey.D2:                         // Изменение наименования задачи
                             {
                                 Console.WriteLine("\nВведите новое наименование задачи");
                                 string newTitle = Console.ReadLine();
@@ -54,7 +58,7 @@ namespace HomeTask_5._5
                                 UserInterface.PrintToDo(toDoList);
                                 break;
                             }
-                        case ConsoleKey.Delete:
+                        case ConsoleKey.Delete:                     // Удаление выбранной задачи
                             {                                
                                 Console.WriteLine($"Задача № {taskIndex} будет удалена, подтверждаете удаление? Д/Н");
                                 while (true)
@@ -78,13 +82,10 @@ namespace HomeTask_5._5
                                 }
                                 break;
                             }
-
-
                     }
-
-                    //toDoList[numOfToDo_ToChange];
                 }
-                else
+                // Добавление новой задачи в список
+                else                                                
                 {
                     string newTaskTitle = UserInterface.AddNewTask();
                     toDoList.Add(new ToDo((byte)(toDoList.Count + 1), newTaskTitle, false));
@@ -92,15 +93,9 @@ namespace HomeTask_5._5
                     UserInterface.PrintToDo(toDoList);
                 }
             }
-            //toDoList.Add(CreateNewToDo(toDoList));
             WorkWithFile.SaveFile(toDoList);
             Console.WriteLine("Информация успешно сохранена!");
             Console.ReadLine();
-        }
-        static ToDo CreateNewToDo(List<ToDo> toDoList)
-        {
-            byte count = (byte)toDoList.Count;
-            return new ToDo (++count, "Умыться", false);
         }
     }
 }

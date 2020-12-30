@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace HomeTask_5._5
 {
+    /// <summary>
+    /// Класс для реализации вывода в консоль и диалоговыхменю пользователя
+    /// </summary>
     class UserInterface
     {
+        /// <summary>
+        /// Метод форматированного вывода списка задач в консоль
+        /// </summary>
+        /// <param name="toDoList">Список объектов класса задач</param>
         public static void PrintToDo(List<ToDo> toDoList)
         {
             Console.Clear();
@@ -22,7 +29,11 @@ namespace HomeTask_5._5
             string footer = String.Format("=======================================================================");
             Console.WriteLine(footer);
         }
-
+        /// <summary>
+        /// Метод запроса у пользователя необходимости внесения изменений
+        /// </summary>
+        /// <param name="toDoListLenght">Количество задач, имеющихся в списке</param>
+        /// <returns>Флаг необходимости внесения изменений и код изменения</returns>
         public static (bool isNeed, byte value) NeedChanges(byte toDoListLenght)
         {
             Console.WriteLine("Хотите внести изменения в список задач? Д/Н");
@@ -34,21 +45,23 @@ namespace HomeTask_5._5
                 if (key.Key == ConsoleKey.Y) return (false, 0);
                 if (key.Key == ConsoleKey.L)
                 {
-
                     Console.WriteLine("\nДля изменения текущей задачи или её удаления выберите её номер.\n" +
                         "Для добавления новой задачи - 0");
                     return (true, GetValue(minValue, maxValue));
                 }
-
             }
         }
+        /// <summary>
+        /// Метод запроса типа изменения выбранной задачи
+        /// </summary>
+        /// <returns></returns>
         public static ConsoleKey ChooseChange()
         {
             Console.WriteLine("{0}\n{1}\n{2}\n{3}", 
                                 "1 - Изменить статус выполнения.",
                                 "2 - Изменить наименование задачи.",
-                                "Del - удалить задачу из списка",
-                                "Esc - выход в основное меню");
+                                "Del - удалить задачу из списка.",
+                                "Esc - в начало.");
             while (true)
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
@@ -64,7 +77,6 @@ namespace HomeTask_5._5
                 }
             }
         }
-        #region Метод получения значения целого числа из консоли c проверкой по границам значений
         /// <summary>
         /// Выводит значение в виде числа типа byte от минимального до максимального значения включительно с проверкой  после ввода в консоли 
         /// </summary>
@@ -89,11 +101,18 @@ namespace HomeTask_5._5
             Console.WriteLine();
             return value;
         }
-        #endregion
+        /// <summary>
+        /// Метод очищения заданной строки в консоли
+        /// </summary>
+        /// <param name="line">Номер строки</param>
         private static void ClearLine(int line)
         {
             Console.MoveBufferArea(0, line, Console.BufferWidth, 1, Console.BufferWidth, line, ' ', Console.ForegroundColor, Console.BackgroundColor);
         }
+        /// <summary>
+        /// Метод обновления заданной записи в списке задач в консоли
+        /// </summary>
+        /// <param name="record">Объект класса задач</param>
         public static void RefreshRecordLine(ToDo record)
         {
             byte offset = (byte)(record.Count + 2);
@@ -103,6 +122,10 @@ namespace HomeTask_5._5
             record.Print();
             Console.SetCursorPosition(0, oldCursorPosition);
         }
+        /// <summary>
+        /// Метод запроса на добавление новой задачи
+        /// </summary>
+        /// <returns>YНазвание новой задачи</returns>
         public static string AddNewTask()
         {
             Console.WriteLine("Пожалуйста введите название задачи:");

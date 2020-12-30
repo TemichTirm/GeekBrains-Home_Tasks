@@ -8,27 +8,41 @@ using System.Text.Json;
 
 namespace HomeTask_5._5
 {
+    /// <summary>
+    /// Класс работы с файлом
+    /// </summary>
     class WorkWithFile
     {
-        private const string filename = "myToDo.json";
+        private const string filename = "myToDo.json";      // Задаём има файла по умолчанию жестко. Можно при необходимости 
+                                                            // реализовать механизм запроса имени файла
+        /// <summary>
+        /// Метод чтения данных из файла формата json и десериализация
+        /// </summary>
+        /// <returns>Список объектов класса задач</returns>
         public static List<ToDo> ReadFile()
         {
+            // Проверка наличия файла
             if (File.Exists(filename))
             {
                 List<ToDo> toDoList = new List<ToDo>();
                 string[] serializedJson = File.ReadAllLines(filename);
                 for (int i = 0; i < serializedJson.Length; i++)
                 {
+                    // Десериализация по строкам с проверкой целостности данных. При их повреждении строка пропускается
                     try
                     {
                         toDoList.Add(JsonSerializer.Deserialize<ToDo>(serializedJson[i]));
                     }
-                    catch (Exception e) { continue; }
+                    catch (Exception) { continue; }
                 }
                 return toDoList;
             }
             else return null;
         }
+        /// <summary>
+        /// Метод записи данных в файл формата json
+        /// </summary>
+        /// <param name="toDoList">Список объектов класса задач</param>
         public static void SaveFile(List<ToDo> toDoList)
         {
             string[] serializedJson = new string[toDoList.Count];
