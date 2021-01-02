@@ -21,10 +21,10 @@ namespace HomeTask_5._5
         /// <returns>Список объектов класса задач</returns>
         public static List<ToDo> ReadFile()
         {
-            // Проверка наличия файла
+            // Проверка наличия файла            
+            List<ToDo> toDoList = new List<ToDo>();
             if (File.Exists(filename))
             {
-                List<ToDo> toDoList = new List<ToDo>();
                 string[] serializedJson = File.ReadAllLines(filename);
                 for (int i = 0; i < serializedJson.Length; i++)
                 {
@@ -34,10 +34,9 @@ namespace HomeTask_5._5
                         toDoList.Add(JsonSerializer.Deserialize<ToDo>(serializedJson[i]));
                     }
                     catch (Exception) { continue; }
-                }
-                return toDoList;
+                }                
             }
-            else return null;
+            return toDoList;
         }
         /// <summary>
         /// Метод записи данных в файл формата json
