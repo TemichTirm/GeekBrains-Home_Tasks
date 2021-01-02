@@ -12,6 +12,17 @@ namespace HomeTask_3._4
         static void Main(string[] args)
         {
             Console.WriteLine("\n         МОРСКОЙ БОЙ!!!\n");
+            Console.Write("\nРасставить корабли случайным образом? Д/Н");
+            ConsoleKeyInfo key = Console.ReadKey(true);
+            if (key.Key == ConsoleKey.L)
+            {
+                Console.Clear();
+                Console.WriteLine("\n         МОРСКОЙ БОЙ!!!\n");
+            }
+            else if (key.Key == ConsoleKey.Y)
+            {
+                return;
+            }
             Field battleField = new Field(); // Создание нового экземпляра поля
             battleField.Draw();              // Вывод поля на консоль
 
