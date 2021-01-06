@@ -25,6 +25,7 @@ namespace HomeTask_5._5
             List<ToDo> toDoList = new List<ToDo>();
             if (File.Exists(filename))
             {
+                byte count = 1;
                 string[] serializedJson = File.ReadAllLines(filename);
                 for (int i = 0; i < serializedJson.Length; i++)
                 {
@@ -32,6 +33,7 @@ namespace HomeTask_5._5
                     try
                     {
                         toDoList.Add(JsonSerializer.Deserialize<ToDo>(serializedJson[i]));
+                        toDoList[count-1].Count = count++;    // Назначение новыхпорядковых номеров на случай повреждения записей в файле
                     }
                     catch (Exception) { continue; }
                 }                
