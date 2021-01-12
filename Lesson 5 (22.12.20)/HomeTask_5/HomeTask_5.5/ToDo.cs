@@ -24,7 +24,7 @@ namespace HomeTask_5._5
         /// <summary>
         /// Конструктор для создания экземпляра класса задач
         /// </summary>
-        /// <param name="count">порядковый номер задачи</param>
+        /// <param name="count">Порядковый номер задачи</param>
         /// <param name="title">Название задачи</param>
         /// <param name="isDone">Статус выполнения</param>
         public ToDo(byte count, string title, bool isDone = false) 

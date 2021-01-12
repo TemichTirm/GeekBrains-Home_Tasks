@@ -11,7 +11,7 @@ namespace HomeTask_4._4
     /// </summary>
     class FibonachiUpdated : Fibonachi
     {
-        private static ulong[] memory = new ulong[92];  // Массив для хранения значений последовательности
+        private static ulong[] memory = new ulong[93];  // Массив для хранения значений последовательности
                                                         // для оптимизации рекурсивного вычисления
                                                         // размерность 92 элемента, т.к. при 93 идет 
                                                         // переполнение верхней границы значений для типа ulong
