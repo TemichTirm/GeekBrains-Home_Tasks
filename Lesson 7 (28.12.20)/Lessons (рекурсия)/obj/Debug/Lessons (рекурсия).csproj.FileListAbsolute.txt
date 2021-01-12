@@ -1,0 +1,14 @@
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).exe.config
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).exe
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).pdb
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).csprojAssemblyReference.cache
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).csproj.CoreCompileInputs.cache
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).exe
+C:\Users\Temich\source\repos\Lessons (рекурсия)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\bin\Debug\Lessons (рекурсия).pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 7 (28.12.20)\Lessons (рекурсия)\obj\Debug\Lessons (рекурсия).pdb
