@@ -1,0 +1,14 @@
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.exe.config
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.exe
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.pdb
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.csprojAssemblyReference.cache
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.exe
+C:\Users\Temich\source\repos\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\bin\Debug\HomeTask_5.1.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.1\obj\Debug\HomeTask_5.1.pdb

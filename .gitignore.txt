@@ -1,0 +1,5 @@
+# exclude all cache files
+*.cache
+
+# exclude all .vs folders
+/.vs/*

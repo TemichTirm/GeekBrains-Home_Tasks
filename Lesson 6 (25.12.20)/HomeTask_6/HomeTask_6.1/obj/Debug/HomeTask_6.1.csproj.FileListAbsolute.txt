@@ -1,0 +1,14 @@
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\bin\Debug\HomeTask_6.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\bin\Debug\HomeTask_6.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\bin\Debug\HomeTask_6.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\obj\Debug\HomeTask_6.1.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\obj\Debug\HomeTask_6.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\obj\Debug\HomeTask_6.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6\obj\Debug\HomeTask_6.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\bin\Debug\HomeTask_6.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\bin\Debug\HomeTask_6.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\bin\Debug\HomeTask_6.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\obj\Debug\HomeTask_6.1.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\obj\Debug\HomeTask_6.1.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\obj\Debug\HomeTask_6.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 6 (25.12.20)\HomeTask_6\HomeTask_6.1\obj\Debug\HomeTask_6.pdb
