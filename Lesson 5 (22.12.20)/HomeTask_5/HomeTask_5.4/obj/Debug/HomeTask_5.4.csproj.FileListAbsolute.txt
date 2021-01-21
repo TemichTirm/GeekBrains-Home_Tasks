@@ -1,0 +1,7 @@
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\bin\Debug\HomeTask_5.4.exe.config
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\bin\Debug\HomeTask_5.4.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\bin\Debug\HomeTask_5.4.pdb
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\obj\Debug\HomeTask_5.4.csprojAssemblyReference.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\obj\Debug\HomeTask_5.4.csproj.CoreCompileInputs.cache
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\obj\Debug\HomeTask_5.4.exe
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\obj\Debug\HomeTask_5.4.pdb

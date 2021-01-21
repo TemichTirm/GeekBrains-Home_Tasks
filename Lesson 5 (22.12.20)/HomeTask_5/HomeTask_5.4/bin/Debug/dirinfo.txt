@@ -1,0 +1,24 @@
+Путь к директории:
+C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Lesson 5 (22.12.20)\HomeTask_5\HomeTask_5.4\bin\Debug\examples
+
+Содержимое директории:
+.\Decorates
+	.\Decorates\Decorates Tree
+		.\Decorates\Decorates Tree\HD 2560×1600.URL
+		.\Decorates\Decorates Tree\HD 4000×3000.URL
+	.\Decorates\14e897eeaac91b966128d1c139a059cd.jpg
+	.\Decorates\8174Impressionen23.jpg
+	.\Decorates\novogodnij-interer-31.jpg
+	.\Decorates\ukraste-liustru-podveskami-i-nitiami-kristallov-ispolzuite.jpg
+.\Snowman
+	.\Snowman\scale_1200.webp
+	.\Snowman\snowman-clip-art-12.png
+	.\Snowman\snowman-clip-art-22.png
+	.\Snowman\transparent-christmas-snowman.jpg
+.\X-MassTrees
+	.\X-MassTrees\21414.webp
+	.\X-MassTrees\82-картинки-елки-на-новый-год.jpg
+	.\X-MassTrees\elka.jpg
+	.\X-MassTrees\Fure tree.jpg
+.\maxresdefault.jpg
+.\readme.txt
