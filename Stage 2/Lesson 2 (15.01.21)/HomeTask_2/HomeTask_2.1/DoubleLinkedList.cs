@@ -44,10 +44,12 @@ namespace HomeTask_2._1
         public void AddNodeAfter(Node node, int value)
         {
             if (node == null) return;
-            Node newNode = new Node { Value = value };
-            newNode.PrevNode = node;
-            newNode.NextNode = node.NextNode;
-            node.NextNode.PrevNode = newNode;
+            Node newNode = new Node { Value = value, PrevNode = node };
+            if (node.NextNode != null)
+            {
+                newNode.NextNode = node.NextNode;
+                node.NextNode.PrevNode = newNode;
+            }                    
             node.NextNode = newNode;
             Count++;
         }
@@ -89,14 +91,11 @@ namespace HomeTask_2._1
         /// <returns>Элемент списка</returns>
         public Node FindNodeFromIndex(int searchValue, int index)
         {
-            if ((index < 0) || (index >= Count))
-            {
-                throw new IndexOutOfRangeException();
-            }
+            if ((index < 0) || (index >= Count)) throw new IndexOutOfRangeException();
             Node currentNode = FindNodeByIndex(index);
             do
             {
-                if (currentNode.Value == searchValue) { return currentNode; }
+                if (currentNode.Value == searchValue) return currentNode; 
                 currentNode = currentNode.NextNode;
             }
             while (currentNode != null);
@@ -110,10 +109,7 @@ namespace HomeTask_2._1
         /// <returns>Элемент списка</returns>
         public Node FindNodeByIndex(int index)
         {
-            if ((index < 0) || (index >= Count))
-            {
-                throw new IndexOutOfRangeException();
-            }
+            if (index < 0 || index >= Count) throw new IndexOutOfRangeException();
             if (index == 0) return StartNode;
             else if (index == (Count - 1)) return EndNode;
             else
@@ -183,10 +179,7 @@ namespace HomeTask_2._1
         /// <param name="index">Порядковый номер элемента</param>
         public void RemoveNode(int index)
         {
-            if ((index < 0) || (index >= Count))
-            {
-                throw new IndexOutOfRangeException();
-            }
+            if (index < 0 || index >= Count) throw new IndexOutOfRangeException();
             RemoveNode(FindNodeByIndex(index));
         }
 
@@ -196,7 +189,7 @@ namespace HomeTask_2._1
         /// <param name="node">Элемент списка, который необходимо удалить</param>
         public void RemoveNode(Node node)
         {
-            if (node == null) return;
+            if (node == null) throw new NullReferenceException("Указанного элемента не существует");
             if (node == StartNode)
             {
                 node.NextNode.PrevNode = null;
