@@ -11,7 +11,7 @@ namespace HomeTask_2._2
         static void Main(string[] args)
         {
             int[] array = new int[] { 2, 5, 6, 9, 1, 7, 3, 8, 4, 10 };
-            int result = (BinarySearch(15, array));
+            int result = (BinarySearch(6, array));
             Console.WriteLine((result == -1) ? "Такого элемента нет!" : $"{result}");
             foreach (int a in array)
                 Console.Write($"{a}, ");

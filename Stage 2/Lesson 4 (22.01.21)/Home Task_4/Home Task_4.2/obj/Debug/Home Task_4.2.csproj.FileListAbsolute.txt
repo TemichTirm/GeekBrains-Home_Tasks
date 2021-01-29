@@ -1,0 +1,7 @@
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\obj\Debug\Home Task_4.2.csprojAssemblyReference.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\obj\Debug\Home Task_4.2.csproj.CoreCompileInputs.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\bin\Debug\Home Task_4.2.exe.config
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\bin\Debug\Home Task_4.2.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\bin\Debug\Home Task_4.2.pdb
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\obj\Debug\Home Task_4.2.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 4 (22.01.21)\Home Task_4\Home Task_4.2\obj\Debug\Home Task_4.2.pdb

@@ -5,3 +5,10 @@ C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-H
 C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.csproj.CoreCompileInputs.cache
 C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.exe
 C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.pdb
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.exe.config
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\bin\Debug\HomeTask_2.2.pdb
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.csprojAssemblyReference.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.csproj.CoreCompileInputs.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 2 (15.01.21)\HomeTask_2\HomeTask_2.2\obj\Debug\HomeTask_2.2.pdb
