@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>HomeTask_3.BechmarkClass-20210124-113648</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i5-8265U CPU 1.60GHz (Whiskey Lake), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=5.0.102
+  [Host]     : .NET Core 3.1.11 (CoreCLR 4.700.20.56602, CoreFX 4.700.20.56604), X64 RyuJIT
+  DefaultJob : .NET Core 3.1.11 (CoreCLR 4.700.20.56602, CoreFX 4.700.20.56604), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                                             Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>&#39;Дистанция через класс Float&#39;</td><td>43.514 ns</td><td>0.7933 ns</td><td>0.7420 ns</td>
+</tr><tr><td>&#39;Дистанция через структуру Float&#39;</td><td>30.979 ns</td><td>0.4243 ns</td><td>0.3969 ns</td>
+</tr><tr><td>&#39;Дистанция через структуру Double&#39;</td><td>5.172 ns</td><td>0.1168 ns</td><td>0.1092 ns</td>
+</tr><tr><td>&#39;Дистанция через структуру Float (без квадратного корня)&#39;</td><td>27.432 ns</td><td>0.3890 ns</td><td>0.3448 ns</td>
+</tr><tr><td>&#39;Дистанция через структуру Int&#39;</td><td>27.315 ns</td><td>0.4735 ns</td><td>0.4430 ns</td>
+</tr><tr><td>&#39;Дистанция через структуру Long&#39;</td><td>23.574 ns</td><td>0.4708 ns</td><td>0.4404 ns</td>
+</tr></tbody></table>
+</body>
+</html>
