@@ -12,29 +12,18 @@ namespace Home_Task_4._2
         {
             BinaryTree binaryTree = new BinaryTree();
             #region Предварительное наполнение дерева элементами
-            //binaryTree.Add(11);
-            //binaryTree.Add(15);
-            //binaryTree.Add(7);
-            //binaryTree.Add(6);
-            //binaryTree.Add(9);
-            //binaryTree.Add(7);
-            //binaryTree.Add(8);
-            //binaryTree.Add(5);
-            //binaryTree.Add(12);
-            //binaryTree.Add(25);
-            //binaryTree.Add(30);
-            //binaryTree.Add(14);
-            //binaryTree.Add(19);
-            //binaryTree.Add(10);
+
+
             #endregion
-            int choice = 1;
-            int minValue = 0;
+            int choice;
+            int minValue = 1;
             int maxValue = 99;
-            while (choice != 0)
+            do
             {
                 binaryTree.Print();
-                BinaryTree.PrintMenu();
-                choice = GetValue(0, 2);
+                int menuItemsMax = binaryTree.RootNode == null ? 1 : 5;
+                BinaryTree.PrintMenu(menuItemsMax);
+                choice = GetValue(0, menuItemsMax);
                 switch (choice)
                 {
                     case 0:
@@ -47,9 +36,22 @@ namespace Home_Task_4._2
                         Console.WriteLine($"Введите значение, которое хотите удалить в диапазоне от {minValue} до {maxValue}");
                         binaryTree.Delete(GetValue(minValue, maxValue));
                         break;
+                    case 3:         // Поиск элемента в ширину
+                        Console.WriteLine($"Введите значение, которое хотите найти в диапазоне от {minValue} до {maxValue}");
+                        binaryTree.BFS(GetValue(minValue, maxValue));
+                        break;
+                    case 4:         // Поиск элемента в глубину
+                        Console.WriteLine($"Введите значение, которое хотите найти в диапазоне от {minValue} до {maxValue}");
+                        binaryTree.DFS(GetValue(minValue, maxValue));
+                        break;
+                    case 5:         // Бинарный поиск элемента
+                        Console.WriteLine($"Введите значение, которое хотите найти в диапазоне от {minValue} до {maxValue}");
+                        binaryTree.BinarySearch(GetValue(minValue, maxValue));
+                        break;
                 }
-                Console.Clear();       
+                Console.Clear();
             }
+            while (choice != 0);
         }
         /// <summary>
         /// Выводит значение в виде числа типа Int от минимального до максимального значения включительно с проверкой после ввода в консоли 
@@ -64,7 +66,7 @@ namespace Home_Task_4._2
             int line = Console.CursorTop;
             while (!int.TryParse(input, out value) || (value > maxValue) || (value < minValue))
             {
-                Console.Write($"Ошибка! Вы ввели неверное значение, пожалуйста введите число от {minValue} до {maxValue}:");
+                Console.Write($"Ошибка! Вы ввели неверное значение, пожалуйста введите число от {minValue} до {maxValue}: ");
                 input = Console.ReadLine();
             }
             return value;

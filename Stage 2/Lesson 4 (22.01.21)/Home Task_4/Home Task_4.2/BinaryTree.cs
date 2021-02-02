@@ -11,7 +11,7 @@ namespace Home_Task_4._2
     {
         private int NodeCount { get; set; }
         private int TreeHeight { get; set; }
-        private const int cellSize = 4; // Размер строки для отображения узла дерева два символа на скобки идва на само число
+        private const int cellSize = 4; // Размер строки для отображения узла дерева два символа на скобки и два на само число
         public Node RootNode { get; set; }
         /// <summary>
         /// Добавление узла в дерево
@@ -63,15 +63,44 @@ namespace Home_Task_4._2
             TreeHeight = currentLayerCount > TreeHeight? currentLayerCount : TreeHeight;
         }
         /// <summary>
-        /// Поиск значения в дереве
+        /// Бинарный поиск значения в дереве
         /// </summary>
         /// <param name="value">Искомое значение</param>
-        /// <returns>True - значение найдено, False - значение не найдено</returns>
-        public bool Find(int value)
+        public void BinarySearch(int value)
         {
-            bool result = FindNode(value, RootNode) != null;
-            return result;
-        }
+            // Если дерево пустое, поиск не идет
+            if (RootNode == null)
+            {
+                Console.WriteLine("Дерево пустое!");
+                return;
+            }
+            Node currentNode = RootNode;
+            while (currentNode != null )
+            {
+                // Если искомое значение найдено покрасить этот узел зеленым
+                if (value == currentNode.Value)
+                {
+                    PrintNode(currentNode, true);
+                    Console.WriteLine("Искомый элемент найден");
+                    Console.ReadLine();
+                    return;
+                }
+                // Если значение не найдено - покрасить узел красным и двигаться дальше по дереву
+                PrintNode(currentNode, false);
+                if (value < currentNode.Value)
+                {
+                    currentNode = currentNode.LeftNode;
+                    Thread.Sleep(100);
+                }
+                else if (value > currentNode.Value)
+                {
+                    currentNode = currentNode.RightNode;
+                    Thread.Sleep(100);
+                }
+            }
+            Console.WriteLine("Искомый элемент не найден!");
+            Console.ReadLine();
+        }    
         /// <summary>
         /// Рекурсивный поиск узла по значению в дереве
         /// </summary>
@@ -213,6 +242,51 @@ namespace Home_Task_4._2
             if (root.LeftNode == null)
                 return root;
             else return FindLeft(root.LeftNode);
+        }        
+        /// <summary>
+        /// Перекрашивание заданного узла
+        /// </summary>
+        /// <param name="node">Узел дерева</param>
+        /// <param name="status">True - узел зеленый, False - узел красный</param>        
+        private void PrintNode(Node node, bool status)
+        {
+            if (node == null)
+                return;
+            // Создание двумерного массива для хранения элементов дерева
+            int[,] treeStructure = new int[TreeHeight * 2 - 1, (int)Math.Pow(2, TreeHeight)];
+           
+            // Текущая строка в которой должно находится значение узла
+            int currentline = 0;
+            
+            // Текущая колонка в которой должно находится значение узла
+            int column = (int)Math.Pow(2, TreeHeight - 1);
+            
+            // Сдвиг по горизонтали от текущей колонки
+            int offset = 0;
+            int treeStartTopPosition = 2;   // Отступ сверху на 2 строки для отображения кол-ва элементов и высоты дерева
+            
+            // Заполнение двумерного массива значениями элементов дерева и линиями
+            treeStructure = GetTreeStructure(RootNode, currentline, treeStructure, column, offset);
+            int currentTopCursorPosition = Console.CursorTop;
+            
+            // Изменение цвета заданного узла в зависимости от того, найден он или нет
+            for (int i = 0; i < treeStructure.GetLength(0); i++)
+            {
+                for (int j = 0; j < treeStructure.GetLength(1); j++)
+                {
+                    if (treeStructure[i, j] == node.Value)
+                    {
+                        Console.CursorTop = treeStartTopPosition + i;
+                        Console.CursorLeft = j * cellSize;
+                        Console.ForegroundColor = status ? ConsoleColor.Green : ConsoleColor.Red;
+                        Console.WriteLine(string.Format("[{0,2}]", treeStructure[i, j]));
+                        Console.ResetColor();
+                        Console.CursorTop = currentTopCursorPosition;
+                        Console.CursorLeft = 0;
+                        return;
+                    }
+                }
+            }
         }
         /// <summary>
         /// Вывод дерева в консоль
@@ -221,52 +295,64 @@ namespace Home_Task_4._2
         {
             if (RootNode == null)
                 return;
-            Node root = RootNode;
             // Создание двумерного массива строк размерность которого зависит от уровней дерева 
-            string[,] stringTree = new string[TreeHeight * 2 - 1, (int)Math.Pow(2, TreeHeight)];
+            int[,] treeStructure = new int[TreeHeight * 2 - 1, (int)Math.Pow(2, TreeHeight)];
             // Текущая строка в которой должен находится значение узла
             int currentline = 0;
             // Текущая колонка в которой должен находится значение узла
             int column = (int)Math.Pow(2, TreeHeight - 1);
             // Сдвиг по горизонтали от текущей колонки
             int offset = 0;
-            // Заполнение двумерного массива строк значениями элементов дерева и линиями
-            AddValueInStringTree(root, currentline, stringTree, column, offset);
+            // Заполнение двумерного массива значениями элементов дерева и линиями
+            int treeStartTopPosition = 2;
+            treeStructure = GetTreeStructure(RootNode, currentline, treeStructure, column, offset);
 
             Console.WriteLine($"Количество элементов: {NodeCount}");
             Console.WriteLine($"Высота дерева: {TreeHeight}\n");
 
-            // Формирование строк из подстрок двумерного массива для вывода в консоль
-            StringBuilder[] finalTree = new StringBuilder[stringTree.GetLength(0)];
-            for (int i = 0; i < stringTree.GetLength(0); i++)
+            // Вывод элементов дерева в консоль
+            for (int i = 0; i < treeStructure.GetLength(0); i++)
             {
-                finalTree[i] = new StringBuilder();
-                for (int j = 0; j < stringTree.GetLength(1); j++)
+                for (int j = 0; j < treeStructure.GetLength(1); j++)
                 {
-                    // При отсутствии значения в ячейке двумерного массива, ячейка заполняется пустой строкой из пробелов
-                    if (stringTree[i, j] == null)
+                    // При значении по умолчанию в ячейке двумерного массива, следующая итерация
+                    if (treeStructure[i, j] != 0)
                     {
-                        stringTree[i, j] = new string(' ', cellSize);
+                        Console.CursorTop = treeStartTopPosition + i;
+                        Console.CursorLeft = j * cellSize;
+                        switch (treeStructure[i, j])
+                        {
+                            case -1:                // Вывод горизонтальных линий
+                                Console.WriteLine(new string('_', cellSize));
+                                break;
+                            case -2:                // Вывод обратного слэша
+                                Console.WriteLine(new string(' ', cellSize - 1) + '/');
+                                break;
+                            case -3:                // Вывод прямого слэша
+                                Console.WriteLine('\\');
+                                break;
+                            default:                // Вывод значения узла
+                                Console.WriteLine(string.Format("[{0,2}]", treeStructure[i,j]));
+                                Thread.Sleep(100);
+                                break;
+                        }
                     }
-                    finalTree[i].Append(stringTree[i, j]);
                 }
-                Console.WriteLine(finalTree[i]);
-                Thread.Sleep(100);
             }
         }
         /// <summary>
-        /// Заполнение двумерного массива строк значениями элементов дерева и линиями
+        /// Рекурсивное заполнение двумерного массива значениями элементов дерева и линиями
         /// </summary>
         /// <param name="root">Корневой узел</param>
         /// <param name="currentLine">Текущая строка массива</param>
-        /// <param name="tree">Двумерный массив строк дерева</param>
+        /// <param name="tree">Двумерный массив дерева</param>
         /// <param name="column">Текущая колонка массива</param>
         /// <param name="offset">Смещение по горизонтали</param>
-        private void AddValueInStringTree(Node root, int currentLine, string[,] tree, int column, int offset)
+        private int[,] GetTreeStructure(Node root, int currentLine, int[,] tree, int column, int offset)
         {
             column += offset;
             // Добавление значения узла дерева в массив
-            tree[currentLine * 2, column] = string.Format("[{0,2}]", root.Value);
+            tree[currentLine * 2, column] = root.Value;
             currentLine++;
             // Расчет смещения для элементов следующего уровня
             offset = (int)Math.Pow(2, (TreeHeight - 1) - currentLine);
@@ -276,12 +362,12 @@ namespace Home_Task_4._2
                 for (int i = column - 1; i > column - offset; i--)
                 {
                     // Вывод горизонтальных линий
-                    tree[(currentLine-1) * 2, i] = new string('_', cellSize);
+                    tree[(currentLine - 1) * 2, i] = (int)Lines.GorisontalLine;
                 }
                 // Вывод вертикальных линий 
-                tree[(currentLine) * 2 - 1, column - offset] = "   /";
+                tree[(currentLine) * 2 - 1, column - offset] = (int)Lines.BackSlash;
                 // Рекурсивный переход на следующий уровень
-                AddValueInStringTree(root.LeftNode, currentLine, tree, column, -offset);
+                tree = GetTreeStructure(root.LeftNode, currentLine, tree, column, -offset);
             }
             // Проход по правому поддереву
             if (root.RightNode != null)
@@ -289,14 +375,14 @@ namespace Home_Task_4._2
                 for (int i = column + 1; i < column + offset; i++)
                 {
                     // Вывод горизонтальных линий
-                    tree[(currentLine - 1) * 2, i] = new string('_', cellSize);
+                    tree[(currentLine - 1) * 2, i] = (int)Lines.GorisontalLine;
                 }
                 // Вывод вертикальных линий 
-                tree[(currentLine) * 2 - 1, column + offset] = "\\   ";
+                tree[(currentLine) * 2 - 1, column + offset] = (int)Lines.DirectSlash;
                 // Рекурсивный переход на следующий уровень
-                AddValueInStringTree(root.RightNode, currentLine, tree, column, offset);
+                tree = GetTreeStructure(root.RightNode, currentLine, tree, column, offset);
             }
-            else return;
+            return tree;
         }
         /// <summary>
         /// Рекурсивная проверка высоты дерева. Необходима после операции удаления для корректного вывода в консоль
@@ -323,13 +409,104 @@ namespace Home_Task_4._2
         /// <summary>
         /// Вывод меню в консоль
         /// </summary>
-        public static void PrintMenu()
+        public static void PrintMenu(int menuItemsMax)
         {
-            Console.WriteLine("\nДля изменения дерева выберите операцию" +
-                              "\n1 - Добавить элемент" +
-                              "\n2 - Удалить элемент\n" +
-                              "\n0 - Выход");
-            
+            Console.Write("\nДля изменения дерева выберите операцию\n" +
+                              "1 - Добавить элемент\n");
+            if (menuItemsMax > 1)
+                Console.WriteLine("2 - Удалить элемент\n" +
+                                "3 - Поиск элемента в ширину\n" +
+                                "4 - Поиск элемента в глубину\n" +
+                                "5 - Бинарный поиск элемента");
+            Console.WriteLine("\n0 - Выход");            
+        }
+        /// <summary>
+        /// Перечисления типов линий
+        /// </summary>
+        private enum Lines
+        {
+            DirectSlash = -3,           //       "\"
+            BackSlash,                  //       "/"
+            GorisontalLine              //       "_"
+        }
+        /// <summary>
+        /// Поиск значения в ширину c помощью очереди
+        /// </summary>
+        /// <param name="searchValue">Искомое значение</param>
+        public void BFS(int searchValue)
+        {
+            // Если дерево пустое, поиск не идет
+            if (RootNode == null)
+            {
+                Console.WriteLine("Дерево пустое!");
+                return;
+            }
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(RootNode);
+            while (queue.Count != 0)
+            {
+                Node currentNode = queue.Dequeue();
+                // Если значение найдено, покрасить узел зеленым и завершить поиск
+                if (currentNode.Value == searchValue)
+                {
+                    PrintNode(currentNode, true);
+                    Console.WriteLine("Искомый элемент найден");
+                    Console.ReadLine();
+                    return;
+                }
+
+                // В противном случае продолжить поиск
+                else
+                {
+                    PrintNode(currentNode, false);
+                    if (currentNode.LeftNode != null)
+                        queue.Enqueue(currentNode.LeftNode);
+                    if (currentNode.RightNode != null)
+                        queue.Enqueue(currentNode.RightNode);
+                    Thread.Sleep(100);
+                }
+            }
+            Console.WriteLine("Искомый элемент не найден!");
+            Console.ReadLine();
+        }
+        /// <summary>
+        /// Поиск значения в глубину с помощью стека
+        /// </summary>
+        /// <param name="searchValue">Искомое значение</param>
+        public void DFS(int searchValue)
+        {
+            // Если дерево пустое, поиск не идет
+            if (RootNode == null)
+            {
+                Console.WriteLine("Дерево пустое!");
+                return;
+            }
+            Stack<Node> stack = new Stack<Node>();
+            stack.Push(RootNode);
+            while (stack.Count != 0)
+            {
+                Node currentNode = stack.Pop();
+                // Если значение найдено, покрасить узел зеленым и завершить поиск
+                if (currentNode.Value == searchValue)
+                {
+                    PrintNode(currentNode, true);
+                    Console.WriteLine("Искомый элемент найден");
+                    Console.ReadLine();
+                    return;
+                }
+                // В противном случае продолжить поиск
+                else
+                {
+                    PrintNode(currentNode, false);
+                    if (currentNode.RightNode != null)
+                        stack.Push(currentNode.RightNode);
+                    if (currentNode.LeftNode != null)
+                        stack.Push(currentNode.LeftNode);
+                    Thread.Sleep(100);
+                }
+            }
+            Console.WriteLine("Искомый элемент не найден!");
+            Console.ReadLine();
         }
     }
 }
