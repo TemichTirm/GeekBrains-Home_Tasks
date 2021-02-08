@@ -1,5 +1,8 @@
 # exclude all cache files
-*.cache
+*\*.cache
 
 # exclude all .vs folders
-/.vs/*
+*\.vs\*.*
+
+# exclude all .suo files
+*\*.suo

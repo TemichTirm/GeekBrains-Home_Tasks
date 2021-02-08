@@ -1,0 +1,123 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6
+// command took 1,57s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6
+// command took 2,95s and exited with 0
+// ***** Done, took 00:00:04 (4.63 sec)   *****
+// Found 4 benchmarks:
+//   BechmarkClass.DistanceClassFloat: DefaultJob
+//   BechmarkClass.DistanceStrustFloat: DefaultJob
+//   BechmarkClass.DistanceStrustDouble: DefaultJob
+//   BechmarkClass.DistanceStructFloatWithoutSqrt: DefaultJob
+
+// **************************
+// Benchmark: BechmarkClass.DistanceClassFloat: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "758cada2-f25f-4c40-b886-90361b6bd4c6.dll" --benchmarkName "HomeTask_3.BechmarkClass.DistanceClassFloat" --job "Default" --benchmarkId 0 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6\bin\Release\netcoreapp3.1
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Invalid runtimeconfig.json [C:\Users\Temich\Desktop\
+ExitCode != 0
+// Benchmark Process 5728 has exited with code -2147450733
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BechmarkClass.DistanceStrustFloat: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "758cada2-f25f-4c40-b886-90361b6bd4c6.dll" --benchmarkName "HomeTask_3.BechmarkClass.DistanceStrustFloat" --job "Default" --benchmarkId 1 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6\bin\Release\netcoreapp3.1
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Invalid runtimeconfig.json [C:\Users\Temich\Desktop\
+ExitCode != 0
+// Benchmark Process 4012 has exited with code -2147450733
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BechmarkClass.DistanceStrustDouble: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "758cada2-f25f-4c40-b886-90361b6bd4c6.dll" --benchmarkName "HomeTask_3.BechmarkClass.DistanceStrustDouble" --job "Default" --benchmarkId 2 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6\bin\Release\netcoreapp3.1
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Invalid runtimeconfig.json [C:\Users\Temich\Desktop\
+ExitCode != 0
+// Benchmark Process 9496 has exited with code -2147450733
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BechmarkClass.DistanceStructFloatWithoutSqrt: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "758cada2-f25f-4c40-b886-90361b6bd4c6.dll" --benchmarkName "HomeTask_3.BechmarkClass.DistanceStructFloatWithoutSqrt" --job "Default" --benchmarkId 3 in C:\Users\Temich\Desktop\Программирование\Geekbrains\GeekBrains-Home_Tasks\Stage 2\Lesson 3 (19.01.21)\HomeTask_3\HomeTask_3\bin\Release\netcoreapp3.1\758cada2-f25f-4c40-b886-90361b6bd4c6\bin\Release\netcoreapp3.1
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Cannot use file stream for [C:\Users\Temich\Desktop\
+Invalid runtimeconfig.json [C:\Users\Temich\Desktop\
+ExitCode != 0
+// Benchmark Process 13748 has exited with code -2147450733
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\HomeTask_3.BechmarkClass-report.csv
+  BenchmarkDotNet.Artifacts\results\HomeTask_3.BechmarkClass-report-github.md
+  BenchmarkDotNet.Artifacts\results\HomeTask_3.BechmarkClass-report.html
+
+// * Detailed results *
+BechmarkClass.DistanceClassFloat: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+BechmarkClass.DistanceStrustFloat: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+BechmarkClass.DistanceStrustDouble: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+BechmarkClass.DistanceStructFloatWithoutSqrt: DefaultJob
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19042
+Intel Core i5-8265U CPU 1.60GHz (Whiskey Lake), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=5.0.102
+  [Host] : .NET Core 3.1.11 (CoreCLR 4.700.20.56602, CoreFX 4.700.20.56604), X64 RyuJIT
+
+
+|                         Method | Mean | Error |
+|------------------------------- |-----:|------:|
+|             DistanceClassFloat |   NA |    NA |
+|            DistanceStrustFloat |   NA |    NA |
+|           DistanceStrustDouble |   NA |    NA |
+| DistanceStructFloatWithoutSqrt |   NA |    NA |
+
+Benchmarks with issues:
+  BechmarkClass.DistanceClassFloat: DefaultJob
+  BechmarkClass.DistanceStrustFloat: DefaultJob
+  BechmarkClass.DistanceStrustDouble: DefaultJob
+  BechmarkClass.DistanceStructFloatWithoutSqrt: DefaultJob
+
+// * Legends *
+  Mean  : Arithmetic mean of all measurements
+  Error : Half of 99.9% confidence interval
+  1 ns  : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:00 (0.58 sec), executed benchmarks: 4
+
+Global total time: 00:00:05 (5.23 sec), executed benchmarks: 4
+// * Artifacts cleanup *
