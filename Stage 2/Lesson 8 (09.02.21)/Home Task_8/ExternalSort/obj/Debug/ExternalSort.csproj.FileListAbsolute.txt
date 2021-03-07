@@ -1,0 +1,7 @@
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\bin\Debug\ExternalSort.exe.config
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\bin\Debug\ExternalSort.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\bin\Debug\ExternalSort.pdb
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\obj\Debug\ExternalSort.csprojAssemblyReference.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\obj\Debug\ExternalSort.csproj.CoreCompileInputs.cache
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\obj\Debug\ExternalSort.exe
+C:\Users\Temich\source\repos\GeekBrains-Home_Tasks\Stage 2\Lesson 8 (09.02.21)\Home Task_8\ExternalSort\obj\Debug\ExternalSort.pdb
